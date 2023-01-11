@@ -1,4 +1,4 @@
-import {ElementRef, OnChanges, SimpleChanges, Input, EventEmitter, Output, Component} from "@angular/core";
+import { ElementRef, OnChanges, SimpleChanges, Input, EventEmitter, Output, Component } from "@angular/core";
 
 declare let jQuery: any;
 
@@ -6,7 +6,7 @@ declare let jQuery: any;
     selector: 'ion-range-slider',
     template: `<input type="text" value="" />`
 })
-export class IonRangeSliderComponent implements OnChanges{
+export class IonRangeSliderComponent implements OnChanges {
 
     @Input() min: any;
     @Input() max: any;
@@ -72,7 +72,7 @@ export class IonRangeSliderComponent implements OnChanges{
     }
 
     ngOnChanges(changes: SimpleChanges): void {
-        if(this.initialized) {
+        if (this.initialized) {
             for (let propName in changes) {
                 let update = {};
                 update[propName] = changes[propName].currentValue;
@@ -154,7 +154,7 @@ export class IonRangeSliderComponent implements OnChanges{
     }
 
     private toBoolean(value) {
-        if(value && typeof value === "string") {
+        if (value && typeof value === "string") {
             return value.toLowerCase() != "false";
         } else {
             return value;
@@ -187,12 +187,12 @@ export class IonRangeSliderComponent implements OnChanges{
 }
 
 export class IonRangeSliderCallback {
-        min: any;               // MIN value
-        max: any;               // MAX value
-        from: number;           // FROM value (left or single handle)
-        from_percent: number;   // FROM value in percents
-        from_value: number;     // FROM index in values array (if used)
-        to: number;             // TO value (right handle in double type)
-        to_percent: number;     // TO value in percents
-        to_value: number;       // TO index in values array (if used)
+    min: any;               // MIN value
+    max: any;               // MAX value
+    from: number;           // FROM value (left or single handle)
+    from_percent: number;   // FROM value in percents
+    from_value: number;     // FROM index in values array (if used)
+    to: number;             // TO value (right handle in double type)
+    to_percent: number;     // TO value in percents
+    to_value: number;       // TO index in values array (if used)
 }

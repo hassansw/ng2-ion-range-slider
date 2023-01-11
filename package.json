@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/PhilippStein/ng2-ion-range-slider#readme",
   "devDependencies": {
+    "@angular/cli": "^10.2.4",
     "@angular/common": "^2.4.4",
     "@angular/compiler": "^2.4.4",
     "@angular/compiler-cli": "^2.4.4",

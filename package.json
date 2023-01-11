@@ -30,7 +30,8 @@
     "@angular/compiler-cli": "^2.4.4",
     "@angular/core": "^2.4.4",
     "@types/core-js": "^0.9.41",
-    "typescript": "2.0.9"
+    "typescript": "2.0.9",
+    "@angular-devkit/schematics": "^15.0.5"
   },
   "peerDependencies": {
     "@angular/core": ">=2.4.4"

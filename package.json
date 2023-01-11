@@ -25,17 +25,17 @@
   },
   "homepage": "https://github.com/PhilippStein/ng2-ion-range-slider#readme",
   "devDependencies": {
-    "@angular/cli": "^10.2.4",
-    "@angular/common": "^2.4.4",
-    "@angular/compiler": "^2.4.4",
-    "@angular/compiler-cli": "^2.4.4",
-    "@angular/core": "^2.4.4",
-    "@types/core-js": "^0.9.41",
-    "typescript": "2.0.9",
-    "@angular-devkit/schematics": "^15.0.5"
+    "@angular/common": "10.2.5",
+    "@angular/compiler": "10.2.5",
+    "@angular/core": "10.2.5",
+    "@angular/platform-browser": "10.2.5",
+    "@angular/platform-browser-dynamic": "10.2.5",
+    "rxjs": "6.5.5",
+    "typescript": "3.9.5",
+    "zone.js": "0.10.3"
   },
   "peerDependencies": {
-    "@angular/core": ">=2.4.4"
+    "@angular/core": "10.2.5"
   },
   "dependencies": {
     "@types/jquery": "^2.0.40",
